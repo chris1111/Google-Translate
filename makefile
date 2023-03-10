@@ -15,7 +15,7 @@ else
 	XCODEBUILD_OPTIONS += -configuration 'Release'
 endif
 
-CommandLineSnapShotMounter:
+GoogleTranslate:
 	@echo "Building Google Translate..."
 	@/usr/bin/xcodebuild $(XCODEBUILD_OPTIONS) $(BUILD_ACTION)  >/dev/null
 	@echo [XCODE] $(PROGRAMS)
