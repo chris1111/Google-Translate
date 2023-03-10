@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MacGap</title>
-  
+<body style="background-color:#2d313a;">
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #2d313a;
+}
 
-  <style type="text/css" media="screen">
-    html, body {
-      height: 100%;
-      width: 100%;
-      background: #FFF;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      -webkit-user-select: none;
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color: DodgerBlue;
+}
+#content{
+    display:none;
+}
+</style>
+<div align="center">
+<h3><p style="color:DodgerBlue;">Welcome Google Translate</p></h3>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<button onclick="move()" style="background-color:DodgerBlue;">Open Google Translate</button>
+<br>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById('content').style.display='block';
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      window.location.href = "https://translate.google.com";
     }
+  }
+}
 
-    h1 {
-      color: #E0E0E0;
-      margin: 18% 0;
-      text-align: center;
-      font-family: helvetica;
-    }
-  </style>
-  
-</head>
-<body>
-  
-  <script type="text/javascript" charset="utf-8">
- </script>
-  
-  <h1>MacGap</h1>
+</script>
+<br>
+<div align="center">
+<img src="com.apple.imacpro.png" /> </a>
+</div><a href="https://translate.google.com"></a></div>
 </body>
 </html>

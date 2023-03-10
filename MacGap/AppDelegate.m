@@ -24,6 +24,10 @@
     return YES;
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
+}
+
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.windowController = [[WindowController alloc] initWithURL: kStartPage];
     [self.windowController setWindowParams];
