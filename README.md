@@ -1,7 +1,7 @@
 # Welcome to Google Translate App for macOS.
 Created from [MaGap](https://macgapproject.github.io/)
 
-Download Release ➣ [Google Translate](https://github.com/chris1111/Google-Translate/releases/tag/V2)
+Download Release ➣ [Google Translate](https://github.com/chris1111/Google-Translate/releases/tag/V3)
 
 
 #### Build on macOS
